@@ -1,0 +1,26 @@
+mat-card{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    width : 250px;
+}
+
+.mat-card-sm-image{
+    height:150px;
+    width:auto;
+}
+
+mat-card-content{
+    padding-top:10px;
+    flex-grow: 1;
+}
+
+mat-card-actions{
+    display: flex;
+    justify-content: flex-end;
+}
+
+small{
+    color:blue;
+}
+
