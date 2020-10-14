@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   // declare title property with value `StackRoute Times`
+  public title = 'StackRoute Times';
+
+  // public isUserLoggedIn: boolean = false;
 }

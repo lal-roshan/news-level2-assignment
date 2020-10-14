@@ -1,4 +1,4 @@
-mat-card{
+/* mat-card{
     display:flex;
     flex-direction: column;
     height:100%;
@@ -22,5 +22,53 @@ mat-card-actions{
 
 small{
     color:blue;
+} */
+
+mat-card{
+    background: whitesmoke;
 }
 
+mat-card-title{
+    font-size: x-large !important;
+}
+
+img{
+    padding: 2px;
+    height: auto;
+    width: 100%;
+    border: 2px solid gainsboro;
+}
+
+/* For avoiding stretching out of images in large screens */
+@media only screen and (min-width: 991px){
+    img{
+        max-width: 45vw;
+        max-height: 50vh;;
+    }
+}
+
+.author{
+    font-weight: normal !important;
+}
+
+.description{
+    font-weight: lighter;
+}
+
+.description::first-letter{
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.read-later{
+    background: #f47541;
+}
+
+.read-later:hover{
+    background: #cc3d05;
+    color:whitesmoke;
+}
+
+.source{
+    font-size: smaller;
+}

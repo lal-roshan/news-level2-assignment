@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-								"node_modules/bootstrap/dist/css/bootstrap.min.css", 	
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": [],
@@ -112,7 +112,7 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-		 "port":4205,
+            "port": 4205,
             "protractorConfig": "e2e/protractor.conf.js",
             "devServerTarget": "keep:serve"
           },

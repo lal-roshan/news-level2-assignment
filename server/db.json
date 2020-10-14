@@ -223,6 +223,34 @@
       "publishedAt": "2020-10-03T16:12:00Z",
       "content": "Salman Khan returned as host for the popular reality show Bigg Boss 14 with a fresh list of contestants that includes faces such as TV couple Rubina Dilaik and Abhinav Shukla, actor Eijaz Khan, Baalv… [+9340 chars]",
       "id": 16
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "India.com"
+      },
+      "author": "India.com Sports Desk",
+      "title": "IPL 2020 LIVE Delhi Capitals vs Rajasthan Royals, DC vs RR 2020 Live Cricket Score And Updates: Smith, Buttle - India.com",
+      "description": "IPL 2020 LIVE SCORE DC vs RR: Stokes Falls; Samson Key For Rajasthan in 162 Chase vs Delhi in Dubai. Check DC vs RR 2020 Live Cricket Score and Updates IPL 2020, Match 30: Hello, and welcome to our live cricket coverage of the IPL 2020 Live match between Delh…",
+      "url": "https://www.india.com/sports/live-cricket-score-dc-vs-rr-dream11-ipl-2020-live-delhi-capitals-vs-rajasthan-royals-video-match-30-ipl-live-streaming-ball-by-ball-updates-hotstar-jio-app-dubai-stokes-out-samson-rr-ahead-162-chase-d-4173139/",
+      "urlToImage": "https://www.india.com/wp-content/uploads/2020/10/DC-vs-RR-Dream11-IPL-2020-Match-30_Live-Cricket-Score-and-Updates-from-Dubai©Indiacom.jpg",
+      "publishedAt": "2020-10-14T16:15:28Z",
+      "content": "DC vs RR 2020 Dream11 IPL, Match 30 IPL 2020 LIVE SCORE\r\nHello and welcome to our live coverage of Dream11 IPL 2020, match no. 30 of the 13th edition of the IPL T20 tournament will be played between … [+4632 chars]",
+      "id": 17
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": null,
+      "title": "Apple announces 'smallest 5G phone in the world' with new iPhone 12 mini - Rappler",
+      "description": null,
+      "url": "https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9emJzRWNpRjBqMkXSAQA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2020-10-14T16:20:10Z",
+      "content": null,
+      "id": 18
     }
   ]
 }
