@@ -6,21 +6,13 @@ export class RouteService {
 
   constructor(private router: Router) { }
 
+  // this method allows navigation to login component
   toLogin(){
-    // this method should allow navigation to login component
     this.router.navigate(['login']);
   }
 
+  // this method allows navigation to dashboard component
   toDashboard(){
-    // this method should allow navigation to dashboard component
     this.router.navigate(['dashboard']);
-  }
-
-  toTrendingNews(){
-    this.router.navigate(['dashboard/newsstories']);
-  }
-
-  toBookmarks(){
-    this.router.navigate(['dashboard/newsreader']);
   }
 }

@@ -1,22 +1,24 @@
 <div class="login-c-form-wrapper p-5 py-3">
   <h3 class="mb-4">Sign In</h3>
-  <form class=" d-flex flex-column" >
-  <mat-form-field>
-    <input matInput type="text" [formControl]="username" placeholder="Username" class="username">
-  </mat-form-field>
-  <small class="mt-1 mb-3 text-danger font-italic">
-    {{getUserNameErrorMessage()}}
-  </small>
-
-  <mat-form-field>
-    <mat-label>Password</mat-label>
-    <input matInput type="text" [formControl]="password" placeholder="Password" class="password">
-  </mat-form-field>
-  <small class="mt-1 mb-3 text-danger font-italic">
-    {{getPasswordErrorMessage()}}
-  </small>
-  <button [disabled]="!username.valid || !password.valid" mat-button type="submit" class="mt-4" (click)="loginSubmit()">Submit</button>
-  
+  <form class="">
+  <fieldset id="loginForm" class=" d-flex flex-column">
+    <mat-form-field>
+      <input matInput type="text" [formControl]="username" placeholder="Username" class="username">
+    </mat-form-field>
+    <small class="mt-1 mb-3 text-danger font-italic">
+      {{getUserNameErrorMessage()}}
+    </small>
+    
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input matInput type="text" [formControl]="password" placeholder="Password" class="password">
+    </mat-form-field>
+    <small class="mt-1 mb-3 text-danger font-italic">
+      {{getPasswordErrorMessage()}}
+    </small>
+    <button [disabled]="!username.valid || !password.valid" mat-button type="submit" class="mt-4"
+      (click)="loginSubmit()">Submit</button>
+  </fieldset>  
 </form>
 <strong *ngIf="submitMessage" class="error-message my-2 mt-4">{{submitMessage}}</strong>
 </div>

@@ -9,17 +9,17 @@ import { NewsService } from '../services/news.service';
 })
 export class NewsStoriesComponent implements OnInit {
 
+  /// property for storing error message on news fetch
   public errorMessage = '';
 
+  /// property for storing fetch list of news
   public newsList: Array<News> = [];
 
+  /// inject dependencies
   constructor(private newsService: NewsService) { }
 
   ngOnInit() {
-    // The code here should fetch the trending news details through NewsService method
-
-    // the code should handle unauthorized, resource not found and internal server error
-    // that can be returned as HttpResponse
+    /// Fetching and initialising the news list
     this.newsService.getTrendingNews()
       .subscribe(response => {
 

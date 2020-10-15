@@ -9,11 +9,13 @@ import { AuthenticationService } from './authentication.service';
 })
 export class NewsService {
   
-
+  /// The api key for fetching trending news
   api_key: string = `ae9d31dc385f49428d73cc27ac4dea15`;
 
+  /// The url for trending news server
   trending_news_api_url:string = `https://newsapi.org/v2/top-headlines?country=in&apikey=${this.api_key}&page=1`;
   
+  /// url for bookmarked news server
   news_api_url:string = `http://localhost:3000/api/v1/news`
 
   //inject the required dependencies in constructor

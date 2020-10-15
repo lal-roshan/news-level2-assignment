@@ -8,7 +8,6 @@ import { NewsStoriesComponent } from './news-stories/news-stories.component';
 
 
 export const routes: Routes = [
-  // configure routes here
   {
     path: 'login',
     component: LoginComponent

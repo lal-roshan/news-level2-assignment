@@ -6,42 +6,37 @@ import { map } from 'rxjs/operators';
 @Injectable()
 export class AuthenticationService {
 
+  /// the url to authentication server
   authenticationUrl = "http://localhost:3000/auth/v1/"
 
   // inject the dependency required for making http calls
   constructor(private httpClient: HttpClient) { }
 
+  /// Method for authenticating user based on the username and password provided in loginDetail
   authenticateUser(loginDetail): Observable<Object>{
-    //this function should make a post request to auth api with user credentials (username and password)
-    // the response should be returned to the calling method
-    console.log(loginDetail);
     return this.httpClient.post(this.authenticationUrl, loginDetail);
   }
 
+  /// Method for setting the bearer token to localstorage
   setBearerToken(token:string): void{
-    // this method should store the authentication token to local storage
     localStorage.setItem('authToken', token);
   }
-  
+
+  /// Method for getting the bearer token from localstorage
   getBearerToken(): string{
-    // this method should return the authentication token stored in local storage
     return localStorage.getItem('authToken');
   }
 
+  /// Method for removing the bearer token from localstorage
   removeBearerToken(): void{
-    // this method should clear the token stored in local storage
     localStorage.removeItem('authToken');
   }
 
+  /// Checks whether the user token is valid or not
   isUserAuthenticated(token:string): Promise<boolean>{
-    // this method should validate authenticity of a user - accepts the token string 
-    // and returns Promise of authenticated status of user with boolean value
     return this.httpClient.post(this.authenticationUrl + 'isAuthenticated', {},{
       headers: new HttpHeaders().set('Authorization', `Bearer ${token}`)
     })
     .pipe(map(response => response['isAuthenticated'])).toPromise();
   }
-
-  
-
 }

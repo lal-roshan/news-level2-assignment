@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // declare title property with value `StackRoute Times`
+  // title property
   public title = 'StackRoute Times';
-
-  // public isUserLoggedIn: boolean = false;
 }

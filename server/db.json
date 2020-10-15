@@ -335,6 +335,62 @@
       "publishedAt": "2020-10-15T06:32:13Z",
       "content": null,
       "id": 24
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NDTV News"
+      },
+      "author": "Vineet Washington",
+      "title": "Mi 10T, Mi 10T Pro Launched in India: Price, Specifications, and Everything Else You Need to Know - Gadgets 360",
+      "description": "Xiaomi Mi 10T, Mi 10T Pro launched in India after their global debut in September. The phones follow the Mi 10 and the Mi 10 Pro that were globally unveiled back in March. The Mi 10 has made its way to the Indian market but the Mi 10 Pro has not.",
+      "url": "https://gadgets.ndtv.com/mobiles/news/mi-10t-pro-xiaomi-price-in-india-rs-35999-launch-specifications-preorders-today-2310432",
+      "urlToImage": "https://i.gadgets360cdn.com/large/Mi_10T_india_launch_1602747153478.jpg",
+      "publishedAt": "2020-10-15T08:22:00Z",
+      "content": "Mi 10T and Mi 10T Pro smartphones have been launched in India after their global debut in September. The phones follow the Mi 10 and the Mi 10 Pro that were globally unveiled back in March. The Mi 10… [+3227 chars]",
+      "id": 25
+    },
+    {
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "author": "TIMESOFINDIA.COM",
+      "title": "RCB vs KXIP Live Score: KL Rahul, Mayank Agarwal off to solid start against Royal Challengers Bangalore - Times of India",
+      "description": "Cricket News: Check RCB vs KXIP IPL live score updates, scorecard, ball-by-ball commentary, live streaming and highlights on Times of India.",
+      "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/rcb-vs-kxip-live-score-royal-challengers-bangalore-post-171/6-against-kings-xi-punjab/articleshow/78682607.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-78686156,width-1070,height-580,imgsize-408289,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "publishedAt": "2020-10-15T16:31:00Z",
+      "content": "On the ground or in the air,Theres not a ball Captain Kohli will spare. @imVkohli#PlayBold #IPL2020 https://t.co/ljWWMcD9bF\r\n— Royal Challengers Bangalore (@RCBTweets) 1602763208000",
+      "id": 26
+    },
+    {
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "author": "TIMESOFINDIA.COM",
+      "title": "RCB vs KXIP Live Score: KL Rahul, Mayank Agarwal off to solid start against Royal Challengers Bangalore - Times of India",
+      "description": "Cricket News: Check RCB vs KXIP IPL live score updates, scorecard, ball-by-ball commentary, live streaming and highlights on Times of India.",
+      "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/rcb-vs-kxip-live-score-royal-challengers-bangalore-post-171/6-against-kings-xi-punjab/articleshow/78682607.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-78686156,width-1070,height-580,imgsize-408289,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "publishedAt": "2020-10-15T16:31:00Z",
+      "content": "On the ground or in the air,Theres not a ball Captain Kohli will spare. @imVkohli#PlayBold #IPL2020 https://t.co/ljWWMcD9bF\r\n— Royal Challengers Bangalore (@RCBTweets) 1602763208000",
+      "id": 27
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Hindustan Times"
+      },
+      "author": "hindustantimes.com | Edited by Poulomi Ghosh",
+      "title": "India, China engaged in ‘confidential’ talks to resolve border standoff, says Jaishankar - Hindustan Times",
+      "description": "“There is not very much that I am in a position to say in public. I certainly do not want to prejudge it,” Jaishankar said.",
+      "url": "https://www.hindustantimes.com/india-news/india-china-engaged-in-confidential-talks-to-resolve-border-standoff-says-jaishankar/story-ZvIxiCYQsEbIfTR3vvQEAI.html",
+      "urlToImage": "https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2020/10/15/Pictures/_0c447bf2-0ef5-11eb-9477-4f430730ecf3.JPG",
+      "publishedAt": "2020-10-15T14:46:19Z",
+      "content": "India and China are engaged in talks to resolve the border standoff and what is going on is “something confidential” between the two sides, external affairs minister S Jaishankar said on Thursday.\r\n … [+1569 chars]",
+      "id": 28
     }
   ]
 }

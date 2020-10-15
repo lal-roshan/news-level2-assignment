@@ -11,30 +11,36 @@ import { EventEmitter } from 'protractor';
 })
 export class LoginComponent {
 
-  // implement login functionality using Reactive forms
-
+  /// Form control for user name input
   username = new FormControl('', [Validators.required]);
   
+  /// Form control for password input
   password = new FormControl('', [Validators.required]);
 
+  /// Property for storing messages on submit of form
   submitMessage = '';
 
-  // inject the dependencies required for authentication and routing
+  /// inject the dependencies required for authentication and routing
   constructor(private authService: AuthenticationService,
               private routeService: RouteService) { 
     
   }
 
+  /// remove already existing user token if any on login screen
   ngOnInit(){
     this.authService.removeBearerToken();
   }
 
-
+  /// Method invoked on submit button click where user is validated and
+  /// decision is taken whether or not to allow further navigation
   loginSubmit() {
-    console.log('signing in');
-    // implement login validation and error handling code here
+    /// Disabling the whole form when clicking submit button
+    document.getElementById('loginForm').setAttribute('disabled', 'true');
+
+    ///Authenticating user credentials
     this.authService.authenticateUser({ username: this.username.value, password: this.password.value})
     .subscribe(data => {
+      /// If valid user, the token is saved and further navigation is done
       this.authService.setBearerToken(data['token']);
       this.routeService.toDashboard();
     },
@@ -47,12 +53,11 @@ export class LoginComponent {
         this.submitMessage = 'Some error occured. Please try again!!';
       }
     });
+    /// enabling the form
+    document.getElementById('loginForm').removeAttribute('disabled');
   }
 
-  getErrorMessage() {
-    // this function should return error message  
-  }
-
+  /// Method for getting error message relating to username field
   getUserNameErrorMessage() {
     if (this.username.invalid && (this.username.dirty || this.username.touched)){
       return 'Username should not be left blank';
@@ -61,6 +66,7 @@ export class LoginComponent {
     }
   }
 
+  /// Method for getting error message relating to password field
   getPasswordErrorMessage() {
     if (this.password.invalid && (this.password.dirty || this.password.touched)){
       return 'Password should not be left blank';

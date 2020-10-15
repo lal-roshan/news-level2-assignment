@@ -20,7 +20,6 @@ export class CanActivateGuard implements CanActivate {
       this.authService.isUserAuthenticated(this.authService.getBearerToken())
       .then((data) => {
         if(data){
-          console.log('success');
           return true;
         } else{
           this.routeService.toLogin();

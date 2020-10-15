@@ -10,12 +10,6 @@ export class NewsReaderCardComponent implements OnInit {
   /// newsItem object representing the news details of the current card component
   @Input() public newsItem: News;
 
-  /// Confirmation message representing the message on news addition to read later
-  public confirmationMessage = '';
-
-  /// Error message representing the message on error
-  public errorMessage = '';
-
   constructor() { }
 
   ngOnInit() {
