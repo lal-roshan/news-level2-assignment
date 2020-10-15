@@ -2,7 +2,7 @@
   <h3 class="mb-4">Sign In</h3>
   <form class=" d-flex flex-column" >
   <mat-form-field>
-    <input matInput type="text" [formControl]="username" placeholder="Username">
+    <input matInput type="text" [formControl]="username" placeholder="Username" class="username">
   </mat-form-field>
   <small class="mt-1 mb-3 text-danger font-italic">
     {{getUserNameErrorMessage()}}
@@ -10,7 +10,7 @@
 
   <mat-form-field>
     <mat-label>Password</mat-label>
-    <input matInput type="text" [formControl]="password" placeholder="Password">
+    <input matInput type="text" [formControl]="password" placeholder="Password" class="password">
   </mat-form-field>
   <small class="mt-1 mb-3 text-danger font-italic">
     {{getPasswordErrorMessage()}}

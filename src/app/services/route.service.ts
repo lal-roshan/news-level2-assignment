@@ -15,4 +15,12 @@ export class RouteService {
     // this method should allow navigation to dashboard component
     this.router.navigate(['dashboard']);
   }
+
+  toTrendingNews(){
+    this.router.navigate(['dashboard/newsstories']);
+  }
+
+  toBookmarks(){
+    this.router.navigate(['dashboard/newsreader']);
+  }
 }

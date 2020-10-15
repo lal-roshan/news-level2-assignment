@@ -19,19 +19,20 @@ export const routes: Routes = [
     canActivate: [CanActivateGuard],
     children:[
       {
-        path: 'bookmarks',
+        path: '',
+        redirectTo: 'newsstories',
+        canActivate: [CanActivateGuard],
+        pathMatch: 'full'
+      },
+      {
+        path: 'newsreader',
         component: NewsReaderComponent,
         canActivate: [CanActivateGuard],
       },
       {
-        path: 'trending',
+        path: 'newsstories',
         component: NewsStoriesComponent,
         canActivate: [CanActivateGuard],
-      },
-      {
-        path: '',
-        component: NewsReaderComponent,
-        canActivate: [CanActivateGuard]
       }
     ]
   },
