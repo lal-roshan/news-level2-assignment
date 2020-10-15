@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { News } from '../models/news';
+import { AuthenticationService } from './authentication.service';
 
 @Injectable({
   providedIn: 'root'
@@ -16,30 +17,29 @@ export class NewsService {
   news_api_url:string = `http://localhost:3000/api/v1/news`
 
   //inject the required dependencies in constructor
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient,
+              private authService: AuthenticationService) { }
 
   /// Method for fetching the trending news
   /// <returns>The response from the news API</returns>
-  getTrendingNews(token: string){
-    return this.httpClient.get(this.trending_news_api_url,{
-      headers: new HttpHeaders().set('Authorization', `Bearer ${token}`)
-    });
+  getTrendingNews(){
+    return this.httpClient.get(this.trending_news_api_url);
   }
   
   /// Method for adding the news to read later 
   /// <param name="newsItem">Represents the news to be added to read later</param>
   /// <returns>Returns the News item added</returns>
-  public addNews(newsItem: News, token: string): Observable<News> {
+  public addNews(newsItem: News): Observable<News> {
     return this.httpClient.post<News>(this.news_api_url, newsItem,{
-      headers: new HttpHeaders().set('Authorization', `Bearer ${token}`)
+      headers: new HttpHeaders().set('Authorization', `Bearer ${this.authService.getBearerToken()}`)
     });
   }
 
   /// Method for fetching all bookmarked news
   /// <returns> Returns the array of bookmarked news </return>
-  getBookmarkedNews(token: string): Observable<Array<News>> {
+  getBookmarkedNews(): Observable<Array<News>> {
     return this.httpClient.get<Array<News>>(this.news_api_url,{
-      headers: new HttpHeaders().set('Authorization', `Bearer ${token}`)
+      headers: new HttpHeaders().set('Authorization', `Bearer ${this.authService.getBearerToken()}`)
     });
   }
 

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { News } from '../models/news';
-import { AuthenticationService } from '../services/authentication.service';
 import { NewsService } from '../services/news.service';
 
 @Component({
@@ -14,15 +13,14 @@ export class NewsStoriesComponent implements OnInit {
 
   public newsList: Array<News> = [];
 
-  constructor(private newsService: NewsService,
-              private authService: AuthenticationService) { }
+  constructor(private newsService: NewsService) { }
 
   ngOnInit() {
     // The code here should fetch the trending news details through NewsService method
 
     // the code should handle unauthorized, resource not found and internal server error
     // that can be returned as HttpResponse
-    this.newsService.getTrendingNews(this.authService.getBearerToken())
+    this.newsService.getTrendingNews()
       .subscribe(response => {
 
         /// If there are any news in the response

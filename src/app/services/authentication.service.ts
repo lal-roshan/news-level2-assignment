@@ -11,10 +11,11 @@ export class AuthenticationService {
   // inject the dependency required for making http calls
   constructor(private httpClient: HttpClient) { }
 
-  authenticateUser(username:string, password:string): Observable<Object>{
+  authenticateUser(loginDetail): Observable<Object>{
     //this function should make a post request to auth api with user credentials (username and password)
     // the response should be returned to the calling method
-    return this.httpClient.post(this.authenticationUrl, { username, password });
+    console.log(loginDetail);
+    return this.httpClient.post(this.authenticationUrl, loginDetail);
   }
 
   setBearerToken(token:string): void{

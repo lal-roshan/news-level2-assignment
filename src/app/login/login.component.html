@@ -18,5 +18,5 @@
   <button [disabled]="!username.valid || !password.valid" mat-button type="submit" class="mt-4" (click)="loginSubmit()">Submit</button>
   
 </form>
-<strong *ngIf="submitMessage" class="error-message my-2">{{submitMessage}}</strong>
+<strong *ngIf="submitMessage" class="error-message my-2 mt-4">{{submitMessage}}</strong>
 </div>

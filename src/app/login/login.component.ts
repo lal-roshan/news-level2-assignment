@@ -25,18 +25,27 @@ export class LoginComponent {
     
   }
 
+  ngOnInit(){
+    this.authService.removeBearerToken();
+  }
+
 
   loginSubmit() {
     console.log('signing in');
     // implement login validation and error handling code here
-    this.authService.authenticateUser(this.username.value, this.password.value)
+    this.authService.authenticateUser({ username: this.username.value, password: this.password.value})
     .subscribe(data => {
       this.authService.setBearerToken(data['token']);
       this.routeService.toDashboard();
     },
     error => {
-      console.log(error.status);
-      this.submitMessage = 'Some error occured. Please try again!!';
+      if (error.status === 403){
+        this.submitMessage = 'Unauthorized';
+      } else if (error.status === 404){
+        this.submitMessage = 'Http failure response for http://localhost:3000/auth/v1: 404 Not Found';
+      } else{
+        this.submitMessage = 'Some error occured. Please try again!!';
+      }
     });
   }
 

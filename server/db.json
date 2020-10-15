@@ -251,6 +251,34 @@
       "publishedAt": "2020-10-14T16:20:10Z",
       "content": null,
       "id": 18
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NDTV News"
+      },
+      "author": "Tasneem Akolawala",
+      "title": "Mi 10T, Mi 10T Pro to Launch in India Today: How to Watch Livestream, Expected Price - Gadgets 360",
+      "description": "Mi 10T Pro and Mi 10T smartphones are launching in India today. The launch event will begin at 12pm (noon). Xiaomi will be livestreaming the event via its social channels. The Mi 10T and Mi 10T Pro phones were unveiled globally in September and are both power…",
+      "url": "https://gadgets.ndtv.com/mobiles/news/mi-10t-pro-india-launch-how-to-watch-livestream-expected-price-in-india-specifications-2309590",
+      "urlToImage": "https://i.gadgets360cdn.com/large/mi_10t_pro_image_1601464709400.jpg",
+      "publishedAt": "2020-10-15T01:10:35Z",
+      "content": "Mi 10T Pro and Mi 10T smartphones are launching in India today. The launch event will begin at 12pm (noon). Xiaomi will be livestreaming the event via its social channels. The Mi 10T and Mi 10T Pro p… [+3179 chars]",
+      "id": 19
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NDTV News"
+      },
+      "author": "Kislaya Srivastava",
+      "title": "IPL 2020: Harbhajan Singh Sees The Funny Side To MS Dhoni-Paul Reiffel Wide Controversy - NDTV Sports",
+      "description": "Harbhajan Singh had only laughter as reaction to the controversial wide call on Tuesday evening during Chennai Super Kings' match against SunRisers Hyderabad.",
+      "url": "https://sports.ndtv.com/ipl-2020/indian-premier-league-2020-harbhajan-singh-sees-the-funny-side-to-ms-dhoni-paul-reiffel-wide-controversy-2310333",
+      "urlToImage": "https://c.ndtvimg.com/2020-10/21taiji8_ms-dhoni-twitter_625x300_14_October_20.jpg",
+      "publishedAt": "2020-10-15T04:03:00Z",
+      "content": "Harbhajan Singh found a funny side to the incident from Tuesday when during an Indian Premier League (IPL) 2020 match between Chennai Super Kings (CSK) and SunRisers Hyderabad (SRH) on-field umpire P… [+1418 chars]",
+      "id": 20
     }
   ]
 }

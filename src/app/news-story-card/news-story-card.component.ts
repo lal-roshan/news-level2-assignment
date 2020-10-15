@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { News } from '../models/news';
-import { AuthenticationService } from '../services/authentication.service';
 import { NewsService } from '../services/news.service';
 
 @Component({
@@ -21,15 +20,14 @@ export class NewsStoryCardComponent implements OnInit {
   public errorMessage = '';
 
   /// Constructor injecting news service
-  constructor(private newsService: NewsService,
-              private authService: AuthenticationService) { }
+  constructor(private newsService: NewsService) { }
 
   ngOnInit() {
   }
 
   /// Method for adding the news to read later
   addNewsToReadLater(newsItem) {
-    this.newsService.addNews(newsItem, this.authService.getBearerToken())
+    this.newsService.addNews(newsItem)
       .subscribe(response => {
         if (response) {
           this.confirmationMessage = 'This News Article is Bookmarked';

@@ -1,7 +1,4 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
-import { EventEmitter } from 'protractor';
-import { AuthenticationService } from '../services/authentication.service';
-import { RouteService } from '../services/route.service';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -22,8 +19,7 @@ export class HeaderComponent implements OnInit {
 
   // isUserLoggedIn: boolean;
 
-  constructor(private routeService: RouteService,
-              private authService: AuthenticationService) { }
+  constructor() { }
 
   ngOnInit() {    
     let paths = window.location.pathname.split('/');
@@ -44,11 +40,11 @@ export class HeaderComponent implements OnInit {
     let header = document.getElementById('header');
     let navItems = header.getElementsByClassName('nav-item');
     let navItemsDOM = Array.from(navItems);
-    navItemsDOM.forEach(item => item.classList.remove('active'));
+    navItemsDOM.forEach(item => {
+      item.classList.remove('active');
+      item.removeEventListener("click", this.menuItemClick);
+    });
     console.log('logout');
-    this.authService.removeBearerToken();
-    // this.isUserLoggedIn = false;
-    this.routeService.toLogin();
   }
 
   menuItemClick(event){
@@ -66,17 +62,17 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  isUserLoggedIn():boolean{
-    let loggedIn = false;
-    this.authService.isUserAuthenticated(this.authService.getBearerToken())
-      .then(data => {
-        loggedIn = data;
-      })
-      .catch(err => {
-        console.log(err);
-        loggedIn = false;
-      });
-    return loggedIn;
-  }
+  // isUserLoggedIn():boolean{
+  //   let loggedIn = false;
+  //   this.authService.isUserAuthenticated(this.authService.getBearerToken())
+  //     .then(data => {
+  //       loggedIn = data;
+  //     })
+  //     .catch(err => {
+  //       console.log(err);
+  //       loggedIn = false;
+  //     });
+  //   return loggedIn;
+  // }
 
 }

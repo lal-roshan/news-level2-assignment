@@ -13,14 +13,6 @@ export class RouteService {
 
   toDashboard(){
     // this method should allow navigation to dashboard component
-    this.toTrendingNews();
-  }
-
-  toTrendingNews(){
-    this.router.navigate(['home/trending']);
-  }
-
-  toBookmarks(){
-    this.router.navigate(['home/bookmarks']);
+    this.router.navigate(['dashboard']);
   }
 }

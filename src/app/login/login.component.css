@@ -25,3 +25,9 @@ button:hover{
     background: #cc3d05;
     color:whitesmoke;
 }
+
+.error-message{
+    font-size: small;
+    font-weight: normal;
+    color:red;
+}

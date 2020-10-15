@@ -14,7 +14,7 @@ export const routes: Routes = [
     component: LoginComponent
   },
   {
-    path: 'home',
+    path: 'dashboard',
     component: DashboardComponent,
     canActivate: [CanActivateGuard],
     children:[
@@ -27,6 +27,11 @@ export const routes: Routes = [
         path: 'trending',
         component: NewsStoriesComponent,
         canActivate: [CanActivateGuard],
+      },
+      {
+        path: '',
+        component: NewsReaderComponent,
+        canActivate: [CanActivateGuard]
       }
     ]
   },
